@@ -69,8 +69,8 @@
 * Changed `_ConcavePolygonRecoverer` to raise warnings instead of throwing
   exceptions when the underlying search for segment intersection points
   crashes. #338
-* Added the library to ``conda-forge`` so it can now be installed via
-  ``conda install imgaug`` (provided the conda-forge channel was added
+* Added the library to `conda-forge` so it can now be installed via
+  `conda install imgaug` (provided the conda-forge channel was added
   before that). #320 #339
 * Changed dependency `opencv-python` to `opencv-python-headless`.
   This should improve support for some system without GUIs.
@@ -79,8 +79,12 @@
 * Added check to `dtypes.gate_dtypes()` verifying that arguments `allowed`
   and `disallowed` have no intersection. #346
 * Added `imgaug.imgaug.normalize_random_state()`.
-* Added `imgaug.augmenters.PointsSamplerIf`. An interface for classes used for
-  sampling (usually random) coordinate arrays on images.
+* Added `imgaug.augmenters.segmentation._ensure_image_max_size()`.
+* Added `imgaug.augmenters.segmentation.PointsSamplerIf`. An interface for
+  classes used for sampling (usually random) coordinate arrays on images.
+* Added `imgaug.augmenters.segmentation._verify_sample_points_images()`.
+* Added `imgaug.augmenters.segmentation.RegularGridPointsSampler`. A class
+  used to generate regular grids of `rows x columns` points on images.
 
 ## Fixes
  
