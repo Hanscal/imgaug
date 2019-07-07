@@ -78,6 +78,7 @@
 * Refactored code in `augmenters.arithmetic` (general code and docstring cleanup). #328
 * Added check to `dtypes.gate_dtypes()` verifying that arguments `allowed`
   and `disallowed` have no intersection. #346
+* Added `imgaug.imgaug.normalize_random_state()`.
 
 ## Fixes
  
