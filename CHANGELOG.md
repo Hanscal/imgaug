@@ -79,6 +79,8 @@
 * Added check to `dtypes.gate_dtypes()` verifying that arguments `allowed`
   and `disallowed` have no intersection. #346
 * Added `imgaug.imgaug.normalize_random_state()`.
+* Added `imgaug.augmenters.PointsSamplerIf`. An interface for classes used for
+  sampling (usually random) coordinate arrays on images.
 
 ## Fixes
  
