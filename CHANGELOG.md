@@ -78,12 +78,18 @@
 * Refactored code in `augmenters.arithmetic` (general code and docstring cleanup). #328
 * Added check to `dtypes.gate_dtypes()` verifying that arguments `allowed`
   and `disallowed` have no intersection. #346
+* Added `augmenters.color._AbstractColorQuantization`. #347
 * Added `augmenters.color.KMeansColorQuantization` and corresponding
   `augmenters.color.quantize_colors_kmeans()`. Both deal with quantizing
   similar colors using k-Means clustering. #347
     * Added a check script for `KMeansColorQuantization` under
       `checks/check_kmeans_color_quantization.py`. #347
-* Added `augmenters.color._AbstractColorQuantization`. #347
+* Added `augmenters.color.UniformColorQuantization` and corresponding
+  `augmenters.color.quantize_colors_uniform()`. Both deal with quantizing
+  similar colors using k-Means clustering. #347
+    * Added a check script for `UniformColorQuantization` under
+      `checks/check_uniform_color_quantization.py`. #347
+
 
 ## Fixes
  
